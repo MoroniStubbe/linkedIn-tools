@@ -132,7 +132,7 @@
     }
 
     await sleep(5000);
-    bindToButton(saveMatches, getElement(['global-nav']).parentElement);
+    bindToButton(saveMatches, getElement(['global-nav']));
     if(GM_getValue('save')){
         saveMatches();
     }
